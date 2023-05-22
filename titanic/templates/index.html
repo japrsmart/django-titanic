@@ -5,9 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Titanic</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
   <h1>Home Page</h1>
+  <button type="button" onclick="clicked()"">Alert</button>
   <h3>Get Titanic Predictions</h3>
   <p>Enter in the details for made up person on the Titanic</p>
   <p>We will output a prediction</p>
@@ -33,5 +36,6 @@
       <br>
       <input type="submit">
   </form>
+  <script type="text/javascript" src="{% static 'main.js' %}"></script>
 </body>
 </html>
